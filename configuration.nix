@@ -68,6 +68,10 @@
     hyprland
     kitty
     waybar
+    webcord
+    grim
+    slurp
+    xfce.thunar
     brave
     dunst
     libnotify

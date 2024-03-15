@@ -48,7 +48,7 @@
 
 /* The whole bar */
 #waybar {
-    background: #24283b;
+    background: #0f0e0e;
     color: white;
     font-family: JetBrains Mono;
     font-size: 13px;
@@ -192,5 +192,5 @@
 }
 
 #workspaces button.active{
-    border-color: #9aa5ce
+    border-color: #cdcacb;
 }
