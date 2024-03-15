@@ -75,33 +75,20 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    neovim
-    neofetch
     hyprland
-    kitty
-    spotify-tui
     waybar
-    webcord
     grim
     slurp
     xfce.thunar
-    firefox
     dunst
     libnotify
     git
     hyprpaper
-    rofi-wayland
     keyd
     pipewire
   ];
 
 fonts.packages = with pkgs; [
-	fira-code
-	fira-code-symbols
-	jetbrains-mono
-	iosevka
-	(nerdfonts.override {fonts = ["FiraCode" "Iosevka" ]; })
-
 
 ];
 
