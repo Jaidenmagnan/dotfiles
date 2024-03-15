@@ -3,8 +3,9 @@
     description = "My configuration flake";
 
     inputs = {
-	    nixpkgs = "nixpkgs/nixos-unstable";
+	    nixpkgs.url = "nixpkgs/nixos-unstable";
         };
+
     outputs = {self, nixpkgs, ...}:
     let
 	lib = nixpkgs.lib;
@@ -16,5 +17,4 @@
 	    };
 	};
     };
-
 }
