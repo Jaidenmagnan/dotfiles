@@ -1,6 +1,6 @@
 {
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     systems.url = "github:nix-systems/default";
   };
 
@@ -22,10 +22,8 @@
     devShells = eachSystem (pkgs: {
       default = pkgs.mkShell {
         buildInputs = with pkgs; [
-          # Add development dependencies here
 	  cmake
 	  gcc
-	  make
 	  gdb
 	  valgrind
         ];
