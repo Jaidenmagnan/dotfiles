@@ -32,6 +32,7 @@
     firefox
     spotify
     rofi-wayland
+
     vscode
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -92,10 +93,30 @@
   programs.vscode = {
   enable = true;
   extensions = with pkgs.vscode-extensions; [
-    dracula-theme.theme-dracula
     vscodevim.vim
     yzhang.markdown-all-in-one
-  ];
+    zhuangtongfa.material-theme
+    ms-python.python
+    ms-vscode.cpptools
+
+  ]
+
+  ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      {
+        name = "Mountain";
+        publisher = "MrAirport";
+        version = "0.0.1";
+        sha256 = "33fef0006171dec6ab4f4184c1fda41d45885a1c0f19f64ea8a8e7eca7080395";
+      }
+	];
+
+  userSettings = {
+    "editor.fontFamily" = "'Jet Brains Mono', 'Droid Sans Mono', 'monospace', monospace";
+    "editor.fontSize" = 14;
+    "window.titleBarStyle" = "custom";
+    "workbench.iconTheme" = "Material";
+    "workbench.colorTheme" = "Mountain";
+  };
 };
 
 }
