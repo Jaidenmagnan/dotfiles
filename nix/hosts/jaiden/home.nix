@@ -33,7 +33,7 @@
     spotify
     rofi-wayland
 
-    vscode
+    vscode.fhs
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -92,6 +92,7 @@
 
   programs.vscode = {
   enable = true;
+  package = pkgs.vscode.fhs;
   extensions = with pkgs.vscode-extensions; [
     vscodevim.vim
     yzhang.markdown-all-in-one
