@@ -11,7 +11,7 @@
 	lib = nixpkgs.lib;
     in {
 	nixosConfigurations = {
-	    jaiden = lib.nixosSystem {
+	    nix = lib.nixosSystem {
 		system = "x86_64-linux";
 		modules = [ ./configuration.nix ];
 	    };
