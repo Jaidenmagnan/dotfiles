@@ -79,6 +79,9 @@
     git
     hyprpaper
     rofi-wayland
+    keyd
+    pipewire
+    spotify-tui
   ];
 
 fonts.packages = with pkgs; [
@@ -108,6 +111,28 @@ hardware = {
     opengl.enable = true;
 
 };
+systemd.services.keyd = {
+    description = "key remapping daemon";
+    enable = true;
+    serviceConfig = {
+      Type = "simple";
+      ExecStart = "${pkgs.keyd}/bin/keyd";
+    };
+    wantedBy = [ "sysinit.target" ];
+    requires = [ "local-fs.target" ];
+    after = [ "local-fs.target" ];
+  };
+
+  sound.enable = true;
+security.rtkit.enable = true;
+services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+};
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
