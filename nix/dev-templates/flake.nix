@@ -11,6 +11,10 @@
         path = ./flake-utils;
         description = "A basic boilerplate with flake-utils";
       };
+      python = {
+	path = ./python;
+	description = "Python development";
+      };
       cpp = {
 	path = ./cpp;
 	description = "C++ development";
