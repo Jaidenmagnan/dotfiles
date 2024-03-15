@@ -71,6 +71,7 @@
     neofetch
     hyprland
     kitty
+    spotify-tui
     waybar
     webcord
     grim
