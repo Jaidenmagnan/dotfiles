@@ -112,7 +112,7 @@
 	];
 
   userSettings = {
-    "editor.fontFamily" = "'Jet Brains Mono', 'Droid Sans Mono', 'monospace', monospace";
+    "editor.fontFamily" = "Fira Code";
     "editor.fontSize" = 14;
     "window.titleBarStyle" = "custom";
     "workbench.iconTheme" = "Material";
