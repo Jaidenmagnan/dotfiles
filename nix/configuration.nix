@@ -84,7 +84,6 @@
     rofi-wayland
     keyd
     pipewire
-    spotify-tui
   ];
 
 fonts.packages = with pkgs; [
