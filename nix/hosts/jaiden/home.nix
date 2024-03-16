@@ -32,6 +32,11 @@
     firefox
     spotify
     rofi-wayland
+    thefuck
+    zsh
+    zsh-autocomplete
+    zsh-autosuggestions
+
 
     vscode.fhs
 
@@ -89,6 +94,30 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.zsh = {
+  enable = true;
+  enableCompletion = true;
+  enableAutosuggestions = true;
+  syntaxHighlighting.enable = true;
+   initExtra = ''
+   setopt NO_CASE_GLOB
+   zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=*      r:|=*' 'l:|=* r:|=*'
+   '';
+
+  oh-my-zsh = {
+	enable = true;
+	plugins = ["git" "thefuck" ];
+	theme = "cloud";
+  };
+
+  shellAliases = {
+    ll = "ls -l";
+    update = "sudo nixos-rebuild switch --flake .";
+  };
+  history.size = 10000;
+  history.path = "${config.xdg.dataHome}/zsh/history";
+};
 
   programs.vscode = {
   enable = true;

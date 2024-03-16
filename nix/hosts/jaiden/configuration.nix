@@ -67,6 +67,9 @@
 	};
   };
 
+  programs.zsh.enable = true;
+  users.users.jaiden.shell = pkgs.zsh;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -85,6 +88,7 @@
     libnotify
     git
     hyprpaper
+    spaceship-prompt
     keyd
     pipewire
   ];
