@@ -1,33 +1,34 @@
 * {
-    green:                       #8aac8b;
-    blue:                        #8aabac;
-    lightfg:                     #f0f0f0;
-    lightbg:                     #0f0f0f; 
-    foreground:                  #f0f0f0;
-    background:                  #0f0f0f;
-    background-color:            #0f0f0f;
-    separatorcolor:              #262626;
-    border-color:                #262626;
-    selected-normal-foreground:  @lightbg;
-    selected-normal-background:  @lightfg;
-    selected-active-foreground:  @background;
-    selected-active-background:  @blue;
-    selected-urgent-foreground:  @background;
-    selected-urgent-background:  @green;
-    normal-foreground:           @foreground;
-    normal-background:           @background;
-    active-foreground:           @blue;
-    active-background:           @background;
-    urgent-foreground:           @green;
-    urgent-background:           @background;
-    alternate-normal-foreground: @foreground;
-    alternate-normal-background: @lightbg;
-    alternate-active-foreground: @blue;
-    alternate-active-background: @lightbg;
-    alternate-urgent-foreground: @green;
-    alternate-urgent-background: @lightbg;
-    spacing:                     2;
+    green:                       #8aac8b;  /* No change, used for specific elements */
+    blue:                        #8aabac;  /* No change, used for specific elements */
+    lightfg:                     #f0f0f0;  /* Light foreground color */
+    lightbg:                     #0f0f0f;  /* Dark background color */
+    foreground:                  #ffffff;  /* Brightened for better visibility */
+    background:                  #0f0f0f;  /* Dark background, no change */
+    background-color:            #0f0f0f;  /* Dark background, no change */
+    separatorcolor:              #262626;  /* Dark, subtle separator */
+    border-color:                #262626;  /* Dark border for elements */
+    selected-normal-foreground:  @lightbg; /* Inverted for contrast */
+    selected-normal-background:  @lightfg; /* Inverted for contrast */
+    selected-active-foreground:  @background; /* No change */
+    selected-active-background:  @blue;      /* No change */
+    selected-urgent-foreground:  @background; /* No change */
+    selected-urgent-background:  @green;     /* No change */
+    normal-foreground:           @foreground; /* Brightened for better visibility */
+    normal-background:           @background; /* No change */
+    active-foreground:           @blue;       /* No change */
+    active-background:           @background; /* No change */
+    urgent-foreground:           @green;      /* No change */
+    urgent-background:           @background; /* No change */
+    alternate-normal-foreground: @foreground; /* Brightened for better visibility */
+    alternate-normal-background: @lightbg;    /* No change */
+    alternate-active-foreground: @blue;       /* No change */
+    alternate-active-background: @lightbg;    /* No change */
+    alternate-urgent-foreground: @green;      /* No change */
+    alternate-urgent-background: @lightbg;    /* No change */
+    spacing:                     2;           /* No change */
 }
+
 window {
     background-color: @background;
     border:           5;
