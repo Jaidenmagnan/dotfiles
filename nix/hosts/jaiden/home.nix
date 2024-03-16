@@ -141,7 +141,7 @@
 	];
 
   userSettings = {
-    "editor.fontFamily" = "Fira Code";
+    "editor.fontFamily"= "'JetBrains Mono SemiBold'";
     "editor.fontSize" = 14;
     "window.titleBarStyle" = "custom";
     "workbench.iconTheme" = "Material";
