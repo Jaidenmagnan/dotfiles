@@ -15,8 +15,8 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./hosts/jaiden/configuration.nix
-         inputs.home-manager.nixosModules.default
+        ./modules/nixos/configuration.nix
+	inputs.home-manager.nixosModules.default
       ];
     };
    };

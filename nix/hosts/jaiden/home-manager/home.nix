@@ -37,8 +37,15 @@
     zsh-autocomplete
     zsh-autosuggestions
 
+    cava
+    nitch
+    tty-clock
+    lxappearance
+    whitesur-gtk-theme
+
 
     vscode.fhs
+    steam
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -108,7 +115,7 @@
   oh-my-zsh = {
 	enable = true;
 	plugins = ["git" "thefuck" ];
-	theme = "cloud";
+	theme = "robbyrussell";
   };
 
   shellAliases = {

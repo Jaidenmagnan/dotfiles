@@ -63,7 +63,7 @@
   home-manager = {
 	extraSpecialArgs = {inherit inputs; };
 	users = {
-		"jaiden" = import ./home.nix;
+		"jaiden" = import ./hosts/jaiden/home-manager/home.nix;
 	};
   };
 
@@ -88,7 +88,7 @@
     libnotify
     git
     hyprpaper
-    spaceship-prompt
+    wl-clipboard
     keyd
     pipewire
   ];
