@@ -47,6 +47,10 @@ textbox {
     text-color:       @foreground;
     padding: 5px;
 }
+element-text {
+ background-color: inherit;
+ text-color: inherit;
+}
 
 listview {
     fixed-height:     0;
