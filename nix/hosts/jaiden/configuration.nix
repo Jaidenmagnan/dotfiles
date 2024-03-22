@@ -1,4 +1,4 @@
-# Edit this configuration file to define what should be installed on
+#Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
@@ -91,12 +91,31 @@
     hyprpaper
     wl-clipboard
     keyd
+    steam
     pipewire
+    amdvlk
   ];
 
 fonts.packages = with pkgs; [
 
 ];
+ programs.steam = {
+enable = true;
+remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+};
+
+hardware.opengl = {
+   enable = true;
+  ## radv: an open-source Vulkan driver from freedesktop
+  driSupport = true;
+  driSupport32Bit = true;
+
+  ## amdvlk: an open-source Vulkan driver from AMD
+  extraPackages = [ pkgs.amdvlk ];
+  extraPackages32 = [ pkgs.driversi686Linux.amdvlk ];
+};
+
 
 programs.hyprland = {
     enable = true;
@@ -111,10 +130,6 @@ environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
 };
 
-hardware = {
-    opengl.enable = true;
-
-};
 systemd.services.keyd = {
     description = "key remapping daemon";
     enable = true;
