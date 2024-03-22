@@ -32,6 +32,7 @@
     firefox
     spotify
     rofi-wayland
+    ranger
     thefuck
     zsh
     zsh-autocomplete
@@ -42,6 +43,8 @@
     tty-clock
     lxappearance
     whitesur-gtk-theme
+
+    ncmpcpp
 
 
     vscode.fhs

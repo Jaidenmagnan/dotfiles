@@ -85,6 +85,7 @@
     slurp
     xfce.thunar
     dunst
+    mpd
     libnotify
     git
     hyprpaper
@@ -126,9 +127,24 @@ systemd.services.keyd = {
     after = [ "local-fs.target" ];
   };
 
+  services.mpd = {
+  enable = true;
+  musicDirectory = "/home/jaidenmagnan/music";
+
+  # Optional:
+  network.listenAddress = "any"; # if you want to allow non-localhost connections
+  startWhenNeeded = true; # systemd feature: only start MPD service upon connection to its socket
+};
+services.mpd.extraConfig = ''
+  audio_output {
+    type "pipewire"
+    name "My PipeWire Output"
+  }
+'';
+
   sound.enable = true;
-security.rtkit.enable = true;
-services.pipewire = {
+  security.rtkit.enable = true;
+  services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
