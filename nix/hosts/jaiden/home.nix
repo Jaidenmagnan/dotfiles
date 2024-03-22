@@ -38,6 +38,9 @@
     zsh-autocomplete
     zsh-autosuggestions
 
+    vlc
+    filezilla
+
     cava
     nitch
     tty-clock
