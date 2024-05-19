@@ -25,6 +25,7 @@
     # pkgs.hello
 
     neofetch
+    bfetch
     kitty
     neovim
     spotify-tui

@@ -110,10 +110,14 @@
     pipewire
   ];
 
+
 programs.hyprland = {
 	enable = true;
 	xwayland.enable = true;
 };
+
+xdg.portal.enable = true;
+xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
 programs.zsh.enable = true;
 users.users.jaiden.shell = pkgs.zsh;
