@@ -20,6 +20,9 @@
     NIXOS_OZONE_WL = "1";
 };
 
+hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -65,6 +68,8 @@
     xkbVariant = "";
   };
 
+  services.blueman.enable=true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jaiden = {
     isNormalUser = true;
@@ -94,6 +99,8 @@
     wget
     git
     hyprland
+    python3
+    python311Packages.pydbus
     kitty
     waybar
     hyprpaper
