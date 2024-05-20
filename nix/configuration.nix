@@ -94,7 +94,6 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    neovim
     firefox
     wget
     git
@@ -103,6 +102,7 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
     python311Packages.pydbus
     kitty
     waybar
+    alsa-utils
     hyprpaper
     grim
     slurp
