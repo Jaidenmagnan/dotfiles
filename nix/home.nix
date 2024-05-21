@@ -42,16 +42,22 @@
     vlc
     filezilla
 
+    # development
+    cmake
+    gcc
+    gdb
+    valgrind
+
     cava
     nitch
     tty-clock
     lxappearance
     whitesur-gtk-theme
 
+
     ncmpcpp
-
-
     vscode.fhs
+    jetbrains.clion
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
