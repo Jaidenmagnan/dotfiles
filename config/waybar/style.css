@@ -49,9 +49,9 @@
 /* The whole bar */
 #waybar {
     /*background: rgba(0,0,0,.5);*/
-    background: rgba(23,32,33,.8);
+    background: rgba(48,52,70,.8);
     /*color: white;*/
-    color: #d4be98;
+    color: #c6d0f5;
     font-family: JetBrains Mono;
     font-size: 10px;
 }

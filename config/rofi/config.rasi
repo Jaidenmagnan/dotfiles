@@ -1,2 +1,3 @@
 //@theme "/home/jaiden/.config/rofi/themes/Fuji2.rasi"
-@theme "/home/jaiden/.nix-profile/share/rofi/themes/gruvbox-dark-hard.rasi"
+//@theme "/home/jaiden/.nix-profile/share/rofi/themes/gruvbox-dark-hard.rasi"
+@theme "/nix/store/xk5rsp8f1anq31afnrsvwj7hjmkyr4dg-rofi-1.7.5+wayland2/share/rofi/themes/purple.rasi"

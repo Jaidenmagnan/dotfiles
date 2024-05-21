@@ -98,6 +98,7 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
     wget
     git
     hyprland
+    brightnessctl
     python3
     python311Packages.pydbus
     kitty

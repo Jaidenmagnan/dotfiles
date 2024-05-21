@@ -6,10 +6,6 @@
   home.username = "jaiden";
   home.homeDirectory = "/home/jaiden";
 
-  imports = [
-  	./modules/neovim.nix
-  ];
-
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -104,9 +100,9 @@
   #
   #  /etc/profiles/per-user/jaiden/etc/profile.d/hm-session-vars.sh
   #
-  #home.sessionVariables = {
-  #   EDITOR = "neovim";
-  #};
+  home.sessionVariables = {
+     EDITOR = "neovim";
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
@@ -140,6 +136,7 @@
   package = pkgs.vscode.fhs;
   extensions = with pkgs.vscode-extensions; [
     vscodevim.vim
+    catppuccin.catppuccin-vsc
     yzhang.markdown-all-in-one
     zhuangtongfa.material-theme
     ms-python.python
@@ -161,7 +158,7 @@
     "editor.fontSize" = 14;
     "window.titleBarStyle" = "custom";
     "workbench.iconTheme" = "Material";
-    "workbench.colorTheme" = "Mountain";
+    "workbench.colorTheme" = "Alt Catppuccin Frappé";
   };
 };
 
