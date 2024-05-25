@@ -22,6 +22,8 @@
 
 hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  hardware.bluetooth.package=pkgs.bluez;
+  services.blueman.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -68,7 +70,6 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
     xkbVariant = "";
   };
 
-  services.blueman.enable=true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jaiden = {
