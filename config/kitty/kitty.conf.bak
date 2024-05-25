@@ -66,6 +66,6 @@ window_padding_width 20.0
 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Material Dark Hard
+# Catppuccin-Frappe
 include current-theme.conf
 # END_KITTY_THEME
