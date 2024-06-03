@@ -25,6 +25,7 @@
     # pkgs.hello
 
     neofetch
+    slack
     bfetch
     kitty
     neovim
@@ -36,6 +37,7 @@
     ranger
     thefuck
     zsh
+    zoom-us
     zsh-autocomplete
     zsh-autosuggestions
 
