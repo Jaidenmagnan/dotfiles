@@ -37,9 +37,10 @@
     ranger
     thefuck
     zsh
-    zoom-us
     zsh-autocomplete
     zsh-autosuggestions
+    hyprpicker
+    obsidian
 
     vlc
     filezilla
