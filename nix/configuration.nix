@@ -11,6 +11,11 @@
       inputs.home-manager.nixosModules.default
     ];
 
+nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
+];
+
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -69,6 +74,7 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
     layout = "us";
     xkbVariant = "";
   };
+
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
