@@ -105,6 +105,8 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
     wget
     git
     hyprland
+    balena-cli
+    etcher
     blueman
     xorg.xrandr
     arandr
